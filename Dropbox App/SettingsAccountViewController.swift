@@ -1,5 +1,5 @@
 //
-//  CreateAccountViewController.swift
+//  SettingsAccountViewController.swift
 //  Dropbox App
 //
 //  Created by Hobgood, Chad on 4/5/16.
@@ -8,22 +8,23 @@
 
 import UIKit
 
-class CreateAccountViewController: UIViewController {
+class SettingsAccountViewController: UIViewController {
 
+    @IBOutlet weak var scrollViewAccount: UIScrollView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        performSegueWithIdentifier("createAccountSegue", sender: self)
+        scrollViewAccount.contentSize = CGSize(width: 320, height: 772)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
     
 
     /*
