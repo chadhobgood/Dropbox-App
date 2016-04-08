@@ -37,9 +37,10 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-New User: https://raw.githubusercontent.com/chadhobgood/Dropbox-App/master/notes/userUser.gif
+New User
+<img src='https://raw.githubusercontent.com/chadhobgood/Dropbox-App/master/notes/userUser.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-Existing User: https://raw.githubusercontent.com/chadhobgood/Dropbox-App/master/notes/userUser.gif
+Existing User: <img src='https://raw.githubusercontent.com/chadhobgood/Dropbox-App/master/notes/existingUser.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Notes
 
