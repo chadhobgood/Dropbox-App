@@ -1,5 +1,5 @@
 //
-//  SignInRootViewController.swift
+//  CreateAccountRootViewController.swift
 //  Dropbox App
 //
 //  Created by Hobgood, Chad on 4/7/16.
@@ -8,14 +8,14 @@
 
 import UIKit
 
-class SignInRootViewController: UIViewController {
+class CreateAccountRootViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        performSegueWithIdentifier("signInSegue", sender: self)
+        performSegueWithIdentifier("createAccountSegue", sender: self)
     }
 
     override func didReceiveMemoryWarning() {

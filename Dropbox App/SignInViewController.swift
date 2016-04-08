@@ -1,5 +1,5 @@
 //
-//  SignInRootViewController.swift
+//  SignInViewController.swift
 //  Dropbox App
 //
 //  Created by Hobgood, Chad on 4/7/16.
@@ -8,14 +8,12 @@
 
 import UIKit
 
-class SignInRootViewController: UIViewController {
+class SignInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        performSegueWithIdentifier("signInSegue", sender: self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,6 +21,9 @@ class SignInRootViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func didTapBack(sender: AnyObject) {
+        navigationController!.popViewControllerAnimated(true)
+    }
 
     /*
     // MARK: - Navigation

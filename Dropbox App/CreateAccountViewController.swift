@@ -2,7 +2,7 @@
 //  CreateAccountViewController.swift
 //  Dropbox App
 //
-//  Created by Hobgood, Chad on 4/5/16.
+//  Created by Hobgood, Chad on 4/7/16.
 //  Copyright © 2016 Hobgood, Chad. All rights reserved.
 //
 
@@ -15,7 +15,7 @@ class CreateAccountViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        performSegueWithIdentifier("createAccountSegue", sender: self)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,8 +23,9 @@ class CreateAccountViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
+    @IBAction func didTapBack(sender: AnyObject) {
+        navigationController!.popViewControllerAnimated(true)
+    }
 
     /*
     // MARK: - Navigation

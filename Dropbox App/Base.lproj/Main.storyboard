@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -99,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="774" y="324"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="J80-Dr-P0Z">
             <objects>
-                <viewController id="lok-gs-9aZ" sceneMemberID="viewController">
+                <viewController id="lok-gs-9aZ" customClass="SignInViewController" customModule="Dropbox_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KGA-ll-vg8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,6 +116,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="Swt-RX-sTL" kind="modal" animates="NO" id="5rg-A6-doX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tz6-am-Dzb">
+                                <rect key="frame" x="0.0" y="14" width="110" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="didTapBack:" destination="lok-gs-9aZ" eventType="touchUpInside" id="SGQ-cS-Vtm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -147,6 +154,10 @@
                                     <segue destination="lok-gs-9aZ" kind="push" identifier="signInSegue" id="5iD-c0-Fix"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="y33-pb-BjI">
+                                <rect key="frame" x="0.0" y="473" width="320" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -157,10 +168,10 @@
             </objects>
             <point key="canvasLocation" x="1201" y="1768"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Account View Controller-->
         <scene sceneID="LZI-Lw-Kmu">
             <objects>
-                <viewController id="ZxP-0b-nP5" sceneMemberID="viewController">
+                <viewController id="ZxP-0b-nP5" customClass="CreateAccountViewController" customModule="Dropbox_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xM3-mQ-pBv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -179,6 +190,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hgW-uF-NDH">
                                 <rect key="frame" x="0.0" y="20" width="108" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="didTapBack:" destination="ZxP-0b-nP5" eventType="touchUpInside" id="nDD-br-mnZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -190,10 +204,10 @@
             </objects>
             <point key="canvasLocation" x="1671" y="324"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Account View Controller-->
         <scene sceneID="Ynz-13-QYq">
             <objects>
-                <viewController id="qhR-Ex-64R" sceneMemberID="viewController">
+                <viewController id="qhR-Ex-64R" customClass="CreateAccountViewController" customModule="Dropbox_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wgZ-tp-LoG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -219,10 +233,10 @@
             </objects>
             <point key="canvasLocation" x="2118" y="324"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Account View Controller-->
         <scene sceneID="HDX-GL-h1e">
             <objects>
-                <viewController id="bQT-ze-tGh" sceneMemberID="viewController">
+                <viewController id="bQT-ze-tGh" customClass="CreateAccountViewController" customModule="Dropbox_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V3R-Db-FVd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -246,10 +260,10 @@
             </objects>
             <point key="canvasLocation" x="2585" y="324"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Account View Controller-->
         <scene sceneID="6CP-ZF-J0c">
             <objects>
-                <viewController id="Gf8-XU-kyb" sceneMemberID="viewController">
+                <viewController id="Gf8-XU-kyb" customClass="CreateAccountViewController" customModule="Dropbox_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k2p-On-AW5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -273,10 +287,10 @@
             </objects>
             <point key="canvasLocation" x="3041" y="324"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Account View Controller-->
         <scene sceneID="NEv-Ga-Hj2">
             <objects>
-                <viewController id="yD7-BN-kJk" sceneMemberID="viewController">
+                <viewController id="yD7-BN-kJk" customClass="CreateAccountViewController" customModule="Dropbox_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H8v-3t-yfy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -441,10 +455,10 @@
             </objects>
             <point key="canvasLocation" x="3709" y="-396"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="c2b-tJ-V5x">
             <objects>
-                <viewController id="Swt-RX-sTL" sceneMemberID="viewController">
+                <viewController id="Swt-RX-sTL" customClass="SignInViewController" customModule="Dropbox_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JoH-Nb-pUx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -620,10 +634,10 @@
             </objects>
             <point key="canvasLocation" x="2138" y="1768"/>
         </scene>
-        <!--Create Account View Controller-->
+        <!--Create Account Root View Controller-->
         <scene sceneID="G1H-1E-xH0">
             <objects>
-                <viewController id="zka-ih-Kzf" customClass="CreateAccountViewController" customModule="Dropbox_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zka-ih-Kzf" customClass="CreateAccountRootViewController" customModule="Dropbox_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HSt-vk-TMD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -908,10 +922,10 @@
         <image name="welcome3" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hGB-6W-fvd"/>
-        <segue reference="ZiA-eN-2jR"/>
-        <segue reference="Zm5-ZU-D20"/>
-        <segue reference="Jb6-PM-8iI"/>
+        <segue reference="5rg-A6-doX"/>
         <segue reference="do4-rf-fyz"/>
+        <segue reference="Zm5-ZU-D20"/>
+        <segue reference="ZiA-eN-2jR"/>
+        <segue reference="fRA-BH-HuO"/>
     </inferredMetricsTieBreakers>
 </document>
